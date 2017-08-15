@@ -19,3 +19,7 @@ if (asignee) {
     })
   }, 100)
 }
+
+document.addEventListener('click', ({target}) => {
+  if (target.tagName === 'A' && target.className === 'ghx-parent-key js-detailview') window.open(target.href)
+})
