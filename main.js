@@ -10,11 +10,11 @@ if (asignee) {
 
   const interval = setInterval(() => {
     if (!getEl() || !quickFilterExists()) return
-    console.info('found element')
+    console.info('jira filter: found element')
 
     clearInterval(interval)
     setTimeout(() => {
-      console.log('clicking')
+      console.log('jira filter: clicking')
       getEl().click()
     })
   }, 100)
